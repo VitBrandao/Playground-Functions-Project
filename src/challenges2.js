@@ -21,14 +21,14 @@ function techList(list, names) {
 }
 
 
-// Desafio 11
+// Desafio 11 
 function generatePhoneNumber(array) {
   // Retorne a string "Array com tamanho incorreto." caso o array tenha o tamanho diferente de 11.
   if (array.length != 11) {
     return "Array com tamanho incorreto.";
   }
 
-  //Retorne a string "não é possível gerar um número de telefone com esses valores" caso algum dos números do array seja menor que 0 ou maior do que 9.
+  //  Retorne a string "não é possível gerar um número de telefone com esses valores" caso algum dos números do array seja menor que 0 ou maior do que 9.
   for (let cont = 0; cont < array.length; cont += 1) {
     if (array[cont] < 0 || array[cont] > 9) {
       return "não é possível gerar um número de telefone com esses valores";
